@@ -1,29 +1,46 @@
-# LIMS-
-Lab Inventory Management System (LIMS) -
-#
- 
+#  
+# LIMS  (Lab Inventory Management System)  
+
+## Frontend - JAVA FX
+
 ### Pages
 
 >Login Page: To log into the system.   
-
+>  
 >Inventory Page :  To add/delete/issue/return/show the items in the inventory.  
-
+>  
 >Credential Page: To add/delete/change the login credentials for users/admins.  
-  
+>    
 >Logs Page: Displays the log table.  
-
+>  
 >Return Page:  Shows the issued items & has an option to return them.  
 
 
-The pages have the respective .fxml files.
+Fxml files have been designed using Scene Builder.  
 
-fxml files have their respective controller classes
+The pages have the respective .fxml files stored @ src.main.resources.com.example.project.  
+
+## Backend - JAVA
+
+The pages have their respective controller classes @ src.main.java.com.example.project.  
+
+The Inventory/Credential/Logs/Return pages have their respective tables in their own seperate classes @ src.main.java.com.example.project.  
+
+Last was the database connection class  @ src.main.java.com.example.project.DbConnection
+
+## Database - SQLITE
+
+The database was built using SQLite Studio.   
+
+It has 3 tables - inventory, credential, logs.  
+
+The Database connectivity was done using a sqlite-JDBC-driver library @ RESOURCES/sqlite-jdbc-3.21.0.jar  
+
+The database itself @ src/main/java/com/example/Project/ILMS.sqlite  
 
 
 
-
-
-## To run the clone:  
+# To run the clone:  
 
 #### Change  
 
