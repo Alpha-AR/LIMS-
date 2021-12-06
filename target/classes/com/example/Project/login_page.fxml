@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Project.LoginController">
+    <center>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#adadadde" height="134.0" layoutX="120.0" layoutY="148.0" opacity="0.4" stroke="WHITE" strokeType="INSIDE" width="369.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" height="399.0" opacity="0.57" stroke="WHITE" strokeType="INSIDE" width="599.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="0.9857142857142858" startY="0.02857142857142857">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.7647058963775635" blue="1.0" opacity="0.8700000047683716" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <ImageView fitHeight="104.0" fitWidth="129.0" layoutX="248.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../images/image_logo.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="loginButton" alignment="CENTER" layoutX="236.0" layoutY="294.0" mnemonicParsing="false" onAction="#loginButtonPress" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #c300ff;" text="LOGIN" textFill="WHITE">
+                    <font>
+                        <Font name="System Italic" size="13.0" />
+                    </font>
+                </Button>
+                <Label layoutX="163.0" layoutY="234.0" text="Password" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordInput" layoutX="274.0" layoutY="230.0" prefHeight="24.0" prefWidth="171.0" promptText="password" />
+                <TextField fx:id="usernameInput" layoutX="274.0" layoutY="176.0" prefHeight="24.0" prefWidth="171.0" promptText="username" text="U111" />
+                <Label alignment="CENTER" layoutX="161.0" layoutY="181.0" prefHeight="20.0" prefWidth="87.0" text="UserID" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

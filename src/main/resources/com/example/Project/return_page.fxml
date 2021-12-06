@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="807.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Project.ReturnController">
+    <children>
+        <VBox layoutX="284.0" prefHeight="807.0" prefWidth="571.0">
+            <children>
+                <TableView fx:id="tableReturn" editable="true" onMouseClicked="#getSelected" prefHeight="838.0" prefWidth="571.0">
+                    <columns>
+                        <TableColumn fx:id="eIDCol" prefWidth="128.0" text="E_ID" />
+                        <TableColumn fx:id="eNameCol" prefWidth="248.0" text="ITEM" />
+                        <TableColumn fx:id="dateIssuedCol" prefWidth="194.0" text="DATE ISSUED" />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TableView>
+            </children>
+        </VBox>
+        <Pane prefHeight="807.0" prefWidth="285.0">
+            <children>
+                <TextField fx:id="returnItemTextField" layoutX="8.0" layoutY="107.0" prefHeight="35.0" prefWidth="268.0" promptText="E_ID" />
+                <Button fx:id="logoutButton" layoutX="62.0" layoutY="722.0" mnemonicParsing="false" onAction="#logoutButtonPress" prefHeight="50.0" prefWidth="164.0" text="LOGOUT">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+                <Button fx:id="returnItemButton" layoutX="8.0" layoutY="57.0" mnemonicParsing="false" onAction="#returnItemUserButtonPress" prefHeight="50.0" prefWidth="268.0" text="RETURN ITEM">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+                <Button fx:id="updateButton" layoutX="63.0" layoutY="666.0" mnemonicParsing="false" onAction="#updateButtonPress" prefHeight="50.0" prefWidth="164.0" text="UPDATE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            </children>
+        </Pane>
+    </children>
+</Pane>
