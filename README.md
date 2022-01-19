@@ -49,8 +49,7 @@ The database itself @ src/main/java/com/example/Project/ILMS.sqlite
     @ src/main/java/com/example/Project/DbConnection.java 12:59  
     to 'jdbc:sqlite:/$$$/src/main/java/com/example/Project/ILMS.sqlite'    
     
-> '$$$' is the location of the project at the target PC.  
-
+    
 
 #### Add  
 
